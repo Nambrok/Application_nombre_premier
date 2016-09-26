@@ -22,7 +22,10 @@ public:
 
     void afficher(){
       for(int i = 0; i<this->n; i++){
-        cout<<i<<" "<<this->T[i]<<endl;
+        cout<<i<<" -> "<<this->T[i]<<" | ";
+        if(!(i%10)){
+          cout<<endl;
+        }
       }
     }
 

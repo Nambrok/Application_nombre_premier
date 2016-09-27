@@ -1,4 +1,4 @@
-sing namespace std;
+using namespace std;
 #include <iostream>
 #include "NombrePremier.cpp"
 

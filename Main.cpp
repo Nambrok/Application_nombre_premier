@@ -19,5 +19,6 @@ int main(int argc, char *argv[]){
 
     NombrePremier T(n);
     T.afficherOP();
+    // cout<<"Il y a "<<T.getCountNombrePremier()<<" nombre premiers dans l'interval donné."<<endl;
   }
 }

@@ -6,6 +6,7 @@ class NombrePremier{
 private:
     int* T;
     int n;
+    // int countNombrePremier;
 
 public:
 
@@ -15,6 +16,7 @@ public:
     NombrePremier(int n){
       this->T = new int[n];
       this->n = n;
+      // this->countNombrePremier = n;
       this->nombrePremierInitialisation();
       this->nombrePremierCalcul();
     }
@@ -32,7 +34,6 @@ public:
     void nombrePremierCalcul(){
         int i = 2,j;
         //this->T[n] : tableaux d'entiers (ou de booléens) initialisé en 1.
-        Calculer le nombre de nombre premiers dans le tableau.
         while((i*i)<this->n){
           if(this->T[i]){
             j = 2*i;
@@ -63,6 +64,10 @@ public:
         }
       }
     }
+
+    // int getCountNombrePremier(){
+    //   return countNombrePremier;
+    // }
 
     //Destructeur, détruit juste le tableau dynamique après l'éxécution du programme.
     ~NombrePremier(){
